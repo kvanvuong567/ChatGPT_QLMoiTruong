@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Quyết Khiếu Nại</title>
+    <link rel="stylesheet" href="../assets/css/giai_quyet_khieu_nai.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Giải Quyết Khiếu Nại</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tap_tin.html">Tập tin</a></li>
+                <li><a href="khac.html">Khác</a></li>
+                <li><a href="ho_so_moi_truong.html">Hồ sơ môi trường</a></li>
+                <li><a class="active" href="giai_quyet_khieu_nai.html">Khiếu nại</a></li>
+                <li><a href="tro_giup.html">Trợ giúp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Thông Tin Khiếu Nại</h2>
+
+        <!-- Form nhập thông tin khiếu nại -->
+        <form id="complaintForm">
+            <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="complaintType">Loại Khiếu Nại:</label>
+                <select id="complaintType" name="complaintType" required>
+                    <option value="" disabled selected>Chọn loại khiếu nại</option>
+                    <option value="environment">Môi trường</option>
+                    <option value="service">Dịch vụ</option>
+                    <option value="other">Khác</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="details">Chi Tiết Khiếu Nại:</label>
+                <textarea id="details" name="details" rows="5" placeholder="Nhập chi tiết khiếu nại của bạn" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gửi Khiếu Nại</button>
+        </form>
+
+        <!-- Danh sách khiếu nại đã gửi -->
+        <h2>Danh Sách Khiếu Nại</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Họ và Tên</th>
+                    <th>Email</th>
+                    <th>Loại Khiếu Nại</th>
+                    <th>Chi Tiết</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>nguyenvana@gmail.com</td>
+                    <td>Môi trường</td>
+                    <td>Chi tiết khiếu nại...</td>
+                    <td><button class="btn-view">Xem</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Trần Thị B</td>
+                    <td>tranthib@gmail.com</td>
+                    <td>Dịch vụ</td>
+                    <td>Chi tiết khiếu nại...</td>
+                    <td><button class="btn-view">Xem</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NaturalWeb. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="../assets/js/giai_quyet_khieu_nai.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt font chữ và màu sắc chung */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Màu nền nhẹ */
+    color: #333; /* Màu chữ chính */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #00509e; /* Màu xanh chủ đạo */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #003f7f;
+}
+
+/* Main */
+main {
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 20px;
+    color: #00509e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 5px;
+}
+
+/* Nội dung khác */
+.other-content {
+    margin-bottom: 20px;
+}
+
+.other-content h3 {
+    font-size: 18px;
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.other-content ul {
+    margin-bottom: 10px;
+}
+
+.other-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}

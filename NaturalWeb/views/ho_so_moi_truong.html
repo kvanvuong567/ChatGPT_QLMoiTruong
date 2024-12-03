@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Môi Trường</title>
+    <link rel="stylesheet" href="../assets/css/ho_so_moi_truong.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hồ Sơ Môi Trường</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tap_tin.html">Tập tin</a></li>
+                <li><a href="khac.html">Khác</a></li>
+                <li><a class="active" href="ho_so_moi_truong.html">Hồ sơ môi trường</a></li>
+                <li><a href="giai_quyet_khieu_nai.html">Khiếu nại</a></li>
+                <li><a href="tro_giup.html">Trợ giúp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Thông Tin Hồ Sơ Môi Trường</h2>
+
+        <!-- Form nhập thông tin hồ sơ môi trường -->
+        <form id="environmentForm">
+            <div class="form-group">
+                <label for="companyName">Tên Công Ty:</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Nhập tên công ty" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ:</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ công ty" required>
+            </div>
+            <div class="form-group">
+                <label for="contactPerson">Người Liên Hệ:</label>
+                <input type="text" id="contactPerson" name="contactPerson" placeholder="Nhập tên người liên hệ" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="form-group">
+                <label for="details">Chi Tiết Hồ Sơ:</label>
+                <textarea id="details" name="details" rows="5" placeholder="Nhập chi tiết hồ sơ môi trường" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gửi Hồ Sơ</button>
+        </form>
+
+        <!-- Danh sách hồ sơ môi trường đã gửi -->
+        <h2>Danh Sách Hồ Sơ</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên Công Ty</th>
+                    <th>Địa Chỉ</th>
+                    <th>Người Liên Hệ</th>
+                    <th>Chi Tiết</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Công Ty A</td>
+                    <td>123 Đường ABC</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Chi tiết hồ sơ...</td>
+                    <td><button class="btn-view">Xem</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Công Ty B</td>
+                    <td>456 Đường XYZ</td>
+                    <td>Trần Thị B</td>
+                    <td>Chi tiết hồ sơ...</td>
+                    <td><button class="btn-view">Xem</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NaturalWeb. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="../assets/js/ho_so_moi_truong.js"></script>
+</body>
+
+</html>

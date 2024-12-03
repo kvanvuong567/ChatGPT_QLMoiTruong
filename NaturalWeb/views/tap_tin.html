@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tập Tin</title>
+    <link rel="stylesheet" href="../assets/css/tap_tin.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tập Tin</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a class="active" href="tap_tin.html">Tập tin</a></li>
+                <li><a href="khac.html">Khác</a></li>
+                <li><a href="ho_so_moi_truong.html">Hồ sơ môi trường</a></li>
+                <li><a href="giai_quyet_khieu_nai.html">Khiếu nại</a></li>
+                <li><a href="tro_giup.html">Trợ giúp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Thông Tin Tập Tin</h2>
+
+        <!-- Form tải tập tin -->
+        <form id="fileUploadForm">
+            <div class="form-group">
+                <label for="fileName">Tên Tập Tin:</label>
+                <input type="text" id="fileName" name="fileName" placeholder="Nhập tên tập tin" required>
+            </div>
+            <div class="form-group">
+                <label for="fileDescription">Mô Tả:</label>
+                <textarea id="fileDescription" name="fileDescription" rows="5" placeholder="Nhập mô tả tập tin" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileUpload">Chọn Tập Tin:</label>
+                <input type="file" id="fileUpload" name="fileUpload" required>
+            </div>
+            <button type="submit" class="btn-submit">Tải Lên Tập Tin</button>
+        </form>
+
+        <!-- Danh sách tập tin đã tải lên -->
+        <h2>Danh Sách Tập Tin</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên Tập Tin</th>
+                    <th>Mô Tả</th>
+                    <th>Ngày Tải Lên</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tập Tin A</td>
+                    <td>Mô tả tập tin A...</td>
+                    <td>01/01/2024</td>
+                    <td><button class="btn-download">Tải Xuống</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tập Tin B</td>
+                    <td>Mô tả tập tin B...</td>
+                    <td>02/01/2024</td>
+                    <td><button class="btn-download">Tải Xuống</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NaturalWeb. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="../assets/js/tap_tin.js"></script>
+</body>
+
+</html>
